@@ -7,35 +7,17 @@ We're going to refactor this into smaller components.
 // For each of your chosen components: Identify the portion of HTML to be rendered inside of that component. You will have to cut & paste the relevant HTML for that component from the Main component.
 
 // imports always at top
-import Header from "./Header.js";
 import Hero from "./Hero.js";
+import Header from "./Header.js";
+import MainContent from "./MainContent.js";
 
 const Main = () => {
   return `
       <div>
       ${Header()}
       ${Hero()}
-
-      <main>
-        <section class="card-list">
-          <div class="card">
-            <div class="card__content">
-              Content
-            </div>
-            <h4 class="card__title">
-              Title
-            </h4>
-          </div>
-        </section>
-        <section class="activity-list">
-          <div>
-            <h3>Activity Feed</h3>
-            <div class="activity">
-              Activity
-            </div>
-          </div>
-        </section>
-      </main>
+      ${MainContent()}
+      
       <footer>
         <section class="footer footer-left">
           Left Footer
