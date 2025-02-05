@@ -14,12 +14,10 @@ import Footer from "./Footer.js";
 
 const Main = () => {
   return `
-      <div>
       ${Header()}
       ${Hero()}
       ${MainContent()}
       ${Footer()}   
-      </div>
     `;
 };
 
