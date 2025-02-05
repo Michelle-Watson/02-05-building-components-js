@@ -8,17 +8,14 @@ We're going to refactor this into smaller components.
 
 // imports always at top
 import Header from "./Header.js";
+import Hero from "./Hero.js";
 
 const Main = () => {
   return `
-    ${Header()}
       <div>
-      <section class="hero">
-        <div>
-          <h2 class="hero-title">Hero Title</h2>
-          <h3 class="hero-tagline">Tag Line</h3>
-        </div>
-      </section>
+      ${Header()}
+      ${Hero()}
+
       <main>
         <section class="card-list">
           <div class="card">
