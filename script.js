@@ -1,26 +1,18 @@
 /*
-Currently we are defining all our html as one big 
+Q2. Currently we are defining all our html as one big 
 HTML string returned by the Main function.
 We're going to refactor this into smaller components.
 */
+
+// For each of your chosen components: Identify the portion of HTML to be rendered inside of that component. You will have to cut & paste the relevant HTML for that component from the Main component.
+
+// imports always at top
+import Header from "./Header.js";
+
 const Main = () => {
   return `
+    ${Header()}
       <div>
-        <header id="header">
-        <nav id="nav-bar" class="header-item header-left">
-          <a>Home</a> |
-          <a>About</a> |
-          <a>Contact</a>
-        </nav>
-        <div class="header-item logo">
-          Logo
-        </div>
-        <div class="header-item header-right">
-          User:
-          <a>John Smith</a> |
-          <a>Logout</a>
-        </div>
-      </header>
       <section class="hero">
         <div>
           <h2 class="hero-title">Hero Title</h2>
@@ -60,7 +52,7 @@ const Main = () => {
       </footer>
       </div>
     `;
-}
+};
 
-let root = document.getElementById('main');
+let root = document.getElementById("main");
 root.innerHTML = Main();
