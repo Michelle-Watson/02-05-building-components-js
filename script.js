@@ -15,7 +15,7 @@ import Footer from "./Footer.js";
 const Main = () => {
   return `
       ${Header()}
-      ${Hero()}
+      ${Hero("testtitle", "testdescr")}
       ${MainContent()}
       ${Footer()}   
     `;
