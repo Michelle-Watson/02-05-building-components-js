@@ -10,6 +10,7 @@ We're going to refactor this into smaller components.
 import Hero from "./Hero.js";
 import Header from "./Header.js";
 import MainContent from "./MainContent.js";
+import Footer from "./Footer.js";
 
 const Main = () => {
   return `
@@ -17,18 +18,7 @@ const Main = () => {
       ${Header()}
       ${Hero()}
       ${MainContent()}
-      
-      <footer>
-        <section class="footer footer-left">
-          Left Footer
-        </section>
-        <section class="footer footer-center">
-          Center Footer
-        </section>
-        <section class="footer footer-right">
-          Right Footer
-        </section>
-      </footer>
+      ${Footer()}   
       </div>
     `;
 };
